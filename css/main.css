@@ -35,6 +35,74 @@ body {
 	}
 }
 
+/* ===========	オープニングアニメーション =========== */
+.shutter {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fdf34d;
+	z-index: 9999;
+}
+
+.shutter::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: #fff;
+	width: 0;
+	height: 1px;
+}
+
+.shutter {
+	-webkit-animation: byeShutter 2.6s forwards;
+	animation: byeShutter 2.6s forwards;
+}
+
+.shutter::before {
+	-webkit-animation: shutterOpen 2.6s forwards;
+	animation: shutterOpen 2.6s forwards;
+}
+
+@keyframes byeShutter {
+	70% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		display: none;
+		z-index: -1;
+	}
+}
+
+@keyframes shutterOpen {
+	0% {
+		width: 0;
+		height: 1px;
+	}
+
+	50% {
+		width: 100%;
+		height: 1px;
+	}
+
+	90% {
+		width: 100%;
+		height: 100%;
+	}
+
+	100% {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
 .container0 {
 	margin: 0 auto;
 	max-width: 1000px;
@@ -197,6 +265,7 @@ footer {
 	text-align: end;
 	padding-right: 1rem;
 }
+
 @media (max-width: 767px) {
 	.footer-nav li {
 		padding-right: 0.3rem;
@@ -395,7 +464,7 @@ footer {
 	.bxslider div {
 		height: 200px;
 	}
-	
+
 	.skill-title img {
 		width: 70px;
 	}
@@ -432,7 +501,7 @@ footer {
 
 label {
 	color: #422119;
-/*	font-weight: bold;*/
+	/*	font-weight: bold;*/
 	font-size: 1.3rem;
 }
 
@@ -461,6 +530,7 @@ textarea {
 	border-radius: 5px;
 	opacity: .5;
 }
+
 .text {
 	color: #fff;
 }
@@ -481,9 +551,11 @@ input[type="submit"]:hover {
 	label {
 		font-size: 1.3rem;
 	}
+
 	.contact {
 		height: auto;
 	}
+
 	form div {
 		padding: ;
 	}
