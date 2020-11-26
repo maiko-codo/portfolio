@@ -1,0 +1,218 @@
+@import "reset.css";
+
+html{
+    font-size: 100%;
+    line-height: 1.8;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-weight: 500;
+    color: #333;
+}
+header{
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+    width: 1000px;
+    overflow: hidden;
+}
+header #header-logo{
+    float: left;
+}
+header #header-tel{
+    float:right;
+}
+#mainvisual{
+    width: 100%;
+    height: 70vh;
+    background: url(../images/main-visual.jpg) 50% 50%;
+    background-size:cover;
+    position: relative;
+}
+#mainvisual h1{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 20px 0;
+    font-family: YuMincho, 'Yu Mincho',  "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-weight: 400;
+}
+#global-navigation{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+#global-navigation a{
+    padding:0 20px;
+    border-right: 1px solid #333;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+#global-navigation a:last-child{
+    border-right: none;
+}
+#global-navigation a:hover{
+    background-color: #ccc;
+}
+main{
+    width: 1000px;
+    margin:0 auto;
+}
+h2{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #6c2106;
+    color: #6c2106;
+    font-size: 1.875rem;
+    background:url(../images/icon.png) no-repeat left center;
+    padding: 0 0 0 40px;
+}
+h2 span, #menu h3 span{
+    margin-left: 10px;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+#menu h3{
+    padding:0 0 0 10px;
+    border-left: 5px solid #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+section{
+    margin-bottom: 30px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-box,
+.right-box{
+    width: 50%;
+}
+.right-box{
+    text-align: right;
+}
+.menu-table{
+    margin-bottom: 30px;
+    width: 100%;
+}
+.menu-table th{
+    text-align: left;
+}
+.menu-table td{
+    text-align: right;
+}
+.tac{
+    text-align: center;
+}
+#saloninfo table{
+    margin: 20px auto;
+    width: 800px;
+}
+#saloninfo th,
+#saloninfo td{
+    border:1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+#saloninfo th{
+    width: 30%;
+}
+#saloninfo td{
+    width: 70%;
+}
+#news .container{
+    justify-content: space-between;
+}
+#news article{
+    width: 320px;
+}
+#news article img{
+    width: 320px;
+    height: 214px;
+    object-fit: cover;
+}
+#news article a:hover{
+    text-decoration: none;
+}
+#news article a:hover img{
+    opacity: 0.8;
+}
+#news article h3 a{
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#news .article-info{
+    font-size: 0.9rem;
+}
+#news .article-info::before{
+    content: "\f017";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 500;
+}
+.button input,
+.button a{
+    display: block;
+    background-color: #a40000;
+    color: #fff;
+    padding: 10px 0;
+    width: 200px;
+    margin: 30px auto;
+    text-align: center;
+    border:none;
+    border-radius: 10px;
+    transition: background 0.5s;
+    font-size: 1rem;
+}
+.button input:hover,
+.button a:hover{
+    background-color: #660000;
+    cursor: pointer;
+}
+#contact table{
+    margin: 10px auto;
+    width: 80%;
+}
+#contact table th,
+#contact table td{
+    vertical-align: top;
+    padding: 15px 10px;
+}
+#contact table th{
+    text-align: right;
+    width: 40%;
+}
+#contact table td{
+    width:60%;
+}
+#contact input[type="email"],
+#contact input[type="text"]{
+    width: 70%;
+}
+
+footer{
+    padding: 20px 0 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+#footer-tel a{
+    color: #fff;
+}
+#footer-tel a::before{
+    content: "\f095";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+footer small {
+    font-size: 0.8rem;
+}
+#pagetop{
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
