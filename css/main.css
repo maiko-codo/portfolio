@@ -438,6 +438,12 @@ footer {
 	border-bottom: 2px dashed #fff000;
 	margin: 1rem 1rem 2rem 0;
 }
+.web_s p,
+.ai_s p,
+.ps_s p {
+	padding: 1rem;
+}
+
 
 .web {
 	margin: 1rem 0 1rem 1rem;
